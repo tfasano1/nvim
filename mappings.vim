@@ -10,10 +10,10 @@ nmap <silent> <leader>gf :diffget //2<CR>
 " nmap <silent> <leader>gr <Plug>(coc-references)
 nnoremap <silent> <C-p> :GFiles<CR>
 
-nnoremap <C-k> <C-w>k
-nnoremap <C-j> <C-w>j
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+nnoremap <silent> <C-k> :resize -5<CR>
+nnoremap <silent> <C-j> :resize +5<CR>
+nnoremap <silent> <C-h> :vertical resize -5<CR>
+nnoremap <silent> <C-l> :vertical resize +5<CR>
 
 nnoremap <silent> <leader>r :Ranger<CR>
 nnoremap <silent> <leader>f :NERDTreeToggle<CR>
