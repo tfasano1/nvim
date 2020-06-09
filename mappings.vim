@@ -18,6 +18,9 @@ nnoremap <silent> <leader>f :NERDTreeToggle<CR>
 nnoremap <silent> <leader>w :w<CR>
 nnoremap <silent> <leader>so :so $MYVIMRC<CR>
 
+nnoremap ; :
+nnoremap : ;
+
 " Git    	
 nnoremap <silent> <leader>gs :G<CR>
 nmap <silent> <leader>gps :Git --paginate push<CR>

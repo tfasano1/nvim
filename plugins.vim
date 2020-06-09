@@ -40,4 +40,6 @@ Plug 'preservim/nerdtree'
 Plug 'ap/vim-css-color'
 " Jump to references (leader+j)
 Plug 'pechorin/any-jump.vim'
+" Table mode
+Plug  'dhruvasagar/vim-table-mode'
 call plug#end()

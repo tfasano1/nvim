@@ -31,3 +31,8 @@
   autocmd BufWinEnter ?* silent! loadview
 augroup endaugroup END
 
+" Automatically enable table mode in Md files
+:augroup EnableTable
+:    autocmd!
+:    autocmd FileType markdown :TableModeEnable
+:augroup endaugroup END
