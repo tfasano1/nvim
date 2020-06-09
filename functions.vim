@@ -20,3 +20,8 @@
 :  autocmd ColorScheme * highlight QuickScopeSecondary guifg='#bd3a48' gui=underline ctermfg=199 cterm=underline
 
 :augroup END
+
+"Folding
+:autocmd BufWinLeave *.* mkview
+:autocmd BufWinEnter *.* silent loadview
+

@@ -16,6 +16,7 @@
 :set splitright
 :set cursorline
 :set background=dark
+:set fdm=manual
 :colorscheme gruvbox
 
 " Disables higlight in normal mode
