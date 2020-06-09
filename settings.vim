@@ -1,6 +1,10 @@
 
 :let mapleader = ' '
 
+" Disables higlight in normal mode
+:let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" --- Settings ---
 :set spell
 :set clipboard+=unnamedplus
 :set nu relativenumber
@@ -19,6 +23,6 @@
 :set fdm=manual
 :colorscheme gruvbox
 
-" Disables higlight in normal mode
-:let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+
 

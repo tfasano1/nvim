@@ -36,5 +36,8 @@ Plug 'unblevable/quick-scope'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 " NerdTree
 Plug 'preservim/nerdtree'
+" CSS color
+Plug 'ap/vim-css-color'
+" Jump to references (leader+j)
+Plug 'pechorin/any-jump.vim'
 call plug#end()
-

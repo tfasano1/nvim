@@ -24,6 +24,7 @@
 " Automatically save folds
 :augroup AutoSaveFolds
 :  autocmd!
-:  au BufWinLeave ?* mkview 1
-:  au BufWinEnter ?* silent! loadview 1
+:  au BufWinLeave * mkview 1
+:  au BufWinEnter * silent! loadview 1
 :augroup END
+
