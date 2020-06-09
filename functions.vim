@@ -21,7 +21,9 @@
 
 :augroup END
 
-"Folding
-:autocmd BufWinLeave *.* mkview
-:autocmd BufWinEnter *.* silent loadview
-
+" Automatically save folds
+:augroup AutoSaveFolds
+:  autocmd!
+:  au BufWinLeave ?* mkview 1
+:  au BufWinEnter ?* silent! loadview 1
+:augroup END
