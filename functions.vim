@@ -23,8 +23,11 @@
 
 " Automatically save folds
 :augroup AutoSaveFolds
-:  autocmd!
-:  au BufWinLeave * mkview 1
-:  au BufWinEnter * silent! loadview 1
-:augroup END
+  autocmd!
+  " view files are about 500 bytes
+  " bufleave but not bufwinleave captures closing 2nd tab
+  " nested is needed by bufwrite* (if triggered via other autocmd)
+  autocmd BufWinLeave,BufLeave,BufWritePost ?* nested silent! mkview!
+  autocmd BufWinEnter ?* silent! loadview
+augroup endaugroup END
 

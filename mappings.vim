@@ -1,4 +1,6 @@
-" --- *** Mappings *** ---
+" -------------------
+" ***   Mappings  ***
+" -------------------
 
 " --- Visual Mode ---
 vnoremap <silent>J :m '>+1<CR>gv=gv
