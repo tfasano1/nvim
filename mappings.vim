@@ -13,13 +13,15 @@ nnoremap <silent> <C-h> :vertical resize -5<CR>
 nnoremap <silent> <C-l> :vertical resize +5<CR>
 
 nnoremap <silent> <leader>r :Ranger<CR>
-nnoremap <silent> <leader>f :NERDTreeToggle<CR>
+nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 
 nnoremap <silent> <leader>w :w<CR>
 nnoremap <silent> <leader>so :so $MYVIMRC<CR>
+nnoremap <silent> <leader>c :e $MYVIMRC <CR>
 
 nnoremap ; :
 nnoremap : ;
+nnoremap K <nop>
 
 " Git    	
 nnoremap <silent> <leader>gs :G<CR>
@@ -27,5 +29,3 @@ nmap <silent> <leader>gps :Git --paginate push<CR>
 nmap <silent> <leader>gj :diffget //3<CR>
 nmap <silent> <leader>gf :diffget //2<CR>
 nnoremap <silent> <C-p> :GFiles<CR>
-
-

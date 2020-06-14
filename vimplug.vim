@@ -11,13 +11,15 @@ Plug 'lervag/vimtex'
 Plug 'rbgrouleff/bclose.vim'
 " File Manager 
 Plug 'francoiscabrol/ranger.vim'
-" Find references and definitions thru git
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Language server protocol and autocomplete
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Fuzzy Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " Auto Complete
 Plug 'vim-scripts/AutoComplPop'
+" Tab complete
+Plug 'ajh17/VimCompletesMe'
 " Surround Plugin
 Plug 'tpope/vim-surround'
 " Commenting < uses gc__ >
@@ -43,3 +45,4 @@ Plug 'pechorin/any-jump.vim'
 " Table mode
 Plug  'dhruvasagar/vim-table-mode'
 call plug#end()
+
