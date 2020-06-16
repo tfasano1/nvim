@@ -6,6 +6,15 @@
 vnoremap <silent>J :m '>+1<CR>gv=gv
 vnoremap <silent>K :m '<-2<CR>gv=gv
 
+" Git    	
+nnoremap <silent> <leader>gs :G<CR>
+nmap <silent> <leader>gps :Git --paginate push<CR>
+nmap <silent> <leader>gj :diffget //3<CR>
+nmap <silent> <leader>gf :diffget //2<CR>
+nnoremap <silent> <C-p> :GFiles<CR>
+nmap <silent> <leader>gd <Plug>(coc-definition)
+nmap <silent> <leader>gr <Plug>(coc-references)
+
 " --- Normal Mode ---
 "  Resize window
 nnoremap <silent> <C-k> :resize -5<CR>
@@ -28,10 +37,6 @@ nnoremap <silent> <leader>c :e $MYVIMRC <CR>
 nnoremap ; :
 nnoremap : ;
 nnoremap K <nop>
+nnoremap <leader><leader> V
 
-" Git    	
-nnoremap <silent> <leader>gs :G<CR>
-nmap <silent> <leader>gps :Git --paginate push<CR>
-nmap <silent> <leader>gj :diffget //3<CR>
-nmap <silent> <leader>gf :diffget //2<CR>
-nnoremap <silent> <C-p> :GFiles<CR>
+
