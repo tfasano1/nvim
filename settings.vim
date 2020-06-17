@@ -21,10 +21,10 @@
 :set cursorline
 :set background=dark
 :set fdm=manual
-:syntax on
 :colorscheme gruvbox
 
 " --- VimTex --- 
 :let g:tex_flavor = 'latex'
 :let g:matchup_override_vimtex = 1
 :let g:matchup_matchparen_deferred = 1
+

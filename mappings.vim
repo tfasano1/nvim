@@ -6,7 +6,7 @@
 vnoremap <silent>J :m '>+1<CR>gv=gv
 vnoremap <silent>K :m '<-2<CR>gv=gv
 
-" Git    	
+" Git
 nnoremap <silent> <leader>gs :G<CR>
 nmap <silent> <leader>gps :Git --paginate push<CR>
 nmap <silent> <leader>gj :diffget //3<CR>
@@ -31,8 +31,8 @@ nnoremap <silent> <leader>r :Ranger<CR>
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 
 nnoremap <silent> <leader>w :w<CR>
-nnoremap <silent> <leader>so :so $MYVIMRC<CR>
-nnoremap <silent> <leader>c :e $MYVIMRC <CR>
+nnoremap <silent> <leader><CR> :so $MYVIMRC<CR>
+nnoremap <silent> <leader><leader><CR> :e $MYVIMRC <CR>
 
 nnoremap ; :
 nnoremap : ;

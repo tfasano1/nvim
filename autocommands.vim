@@ -36,3 +36,17 @@ augroup endaugroup END
 :    autocmd!
 :    autocmd FileType markdown :TableModeEnable
 :augroup endaugroup END
+
+" Trims trailing whitespace
+fun! TrimWhitespace()
+
+    let l:save = winsaveview()
+
+    keeppatterns %s/\s\+$//e
+
+    call winrestview(l:save)
+
+endfun
+
+autocmd BufWritePre ?* :call TrimWhitespace()
+
