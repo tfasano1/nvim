@@ -15,7 +15,7 @@
 :set nowrap
 :set shiftwidth=4
 :set softtabstop=4
-:set expandtab	
+:set expandtab
 :set smartindent
 :set splitright
 :set cursorline
@@ -23,7 +23,7 @@
 :set fdm=manual
 :colorscheme gruvbox
 
-" --- VimTex --- 
+" --- VimTex ---
 :let g:tex_flavor = 'latex'
 :let g:matchup_override_vimtex = 1
 :let g:matchup_matchparen_deferred = 1

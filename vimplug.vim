@@ -9,7 +9,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'lervag/vimtex'
 " Close buffer with leader + bd
 Plug 'rbgrouleff/bclose.vim'
-" File Manager 
+" File Manager
 Plug 'francoiscabrol/ranger.vim'
 " Language server protocol and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -42,7 +42,9 @@ Plug 'preservim/nerdtree'
 Plug 'ap/vim-css-color'
 " Jump to references (leader+j)
 Plug 'pechorin/any-jump.vim'
-" Table mode
+" Table mode in R Markdown
 Plug  'dhruvasagar/vim-table-mode'
+" Select all instances of a visual selection with '*'
+Plug 'nelstrom/vim-visual-star-search'
 call plug#end()
 
