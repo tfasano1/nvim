@@ -5,23 +5,26 @@
 :let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 " --- Settings ---
-:set spell
-:set clipboard+=unnamedplus
-:set nu relativenumber
-:set complete+=kspell
-:set completeopt=menuone,longest
-:set shortmess+=c
-:set hidden
-:set nowrap
-:set shiftwidth=4
-:set softtabstop=4
-:set expandtab
-:set smartindent
-:set splitright
-:set cursorline
-:set background=dark
-:set fdm=manual
-:colorscheme gruvbox
+set spell
+set clipboard+=unnamedplus
+set nu relativenumber
+set complete+=kspell
+set completeopt=menuone,longest
+set shortmess+=c
+set hidden
+set nowrap
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set smartindent
+set splitright
+set splitbelow
+set cursorline
+set background=dark
+set fdm=manual
+" Set window split symbol
+set fillchars+=vert: 
+colorscheme gruvbox
 
 " --- VimTex ---
 :let g:tex_flavor = 'latex'
