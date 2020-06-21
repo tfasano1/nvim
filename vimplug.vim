@@ -3,8 +3,8 @@
 call plug#begin()
 " Color Scheme
 Plug 'gruvbox-community/gruvbox'
-" Bottom bar decor
-Plug 'itchyny/lightline.vim'
+" Bottom bar
+Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 "LaTeX
 Plug 'lervag/vimtex'
 " Close buffer with leader + bd

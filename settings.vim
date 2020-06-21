@@ -4,6 +4,9 @@
 " Disables higlight in normal mode
 :let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
+" Theme for airline
+:let g:airline_theme='base16_gruvbox_dark_hard'
+
 " --- Settings ---
 set spell
 set clipboard+=unnamedplus
