@@ -37,6 +37,11 @@ augroup endaugroup END
 :    autocmd FileType markdown :TableModeEnable
 :augroup endaugroup END
 
+" HTML Settings
+:augroup wrap
+:   autocmd FileType html :set wrap
+:augroup endaugroup END
+
 " Trims trailing whitespace
 fun! TrimWhitespace()
 

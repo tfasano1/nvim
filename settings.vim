@@ -27,6 +27,7 @@ set background=dark
 set fdm=manual
 " Set window split symbol
 set fillchars+=vert: 
+set nrformats+=alpha
 colorscheme gruvbox
 
 " --- VimTex ---
