@@ -49,6 +49,7 @@ nnoremap K <nop>
 nnoremap <leader><leader> V
 nnoremap j jzz
 nnoremap k kzz
+map y$ Y
 
 " Replace every instance of a word, select with '*'
 nnoremap <leader>c :%s///g<Left><Left>
