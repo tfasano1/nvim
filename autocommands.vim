@@ -37,9 +37,9 @@ augroup endaugroup END
 :    autocmd FileType markdown :TableModeEnable
 :augroup endaugroup END
 
-" HTML Settings
+" Markup Langauge Settings
 :augroup wrap
-:   autocmd FileType html :set wrap
+:   autocmd FileType md html tex :set wrap
 :augroup endaugroup END
 
 " Trims trailing whitespace
@@ -53,5 +53,9 @@ fun! TrimWhitespace()
 
 endfun
 
-autocmd BufWritePre ?* :call TrimWhitespace()
+:autocmd BufWritePre ?* :call TrimWhitespace()
 
+" Latex
+:autocmd BufWritePost *.tex silent! execute "!pdflatex % >/dev/null 2>&1" | redraw!
+
+:autocmd FileType tex,latex,markdown.html setlocal spell spelllang=en_us

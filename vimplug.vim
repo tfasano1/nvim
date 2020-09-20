@@ -1,8 +1,9 @@
 
 "Vim-plug
 call plug#begin()
-" Color Scheme
+" Color Schemes
 Plug 'gruvbox-community/gruvbox'
+Plug 'tomasiser/vim-code-dark'
 " Bottom bar
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 "LaTeX
@@ -12,20 +13,17 @@ Plug 'rbgrouleff/bclose.vim'
 " File Manager
 Plug 'francoiscabrol/ranger.vim'
 " Language server protocol and autocomplete
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Fuzzy Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-" Auto Complete
-Plug 'vim-scripts/AutoComplPop'
-" Tab complete
-Plug 'ajh17/VimCompletesMe'
 " Surround Plugin
 Plug 'tpope/vim-surround'
 " Commenting < uses gc__ >
 Plug 'tpope/vim-commentary'
 " Git integration
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 " Repeat a map
 Plug 'tpope/vim-repeat'
 " Smooth Scrolling
@@ -40,11 +38,20 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'preservim/nerdtree'
 " CSS color
 Plug 'ap/vim-css-color'
+" Bracket coloring
+Plug 'luochen1990/rainbow'
 " Jump to references (leader+j)
 Plug 'pechorin/any-jump.vim'
 " Table mode in R Markdown
 Plug  'dhruvasagar/vim-table-mode'
 " Select all instances of a visual selection with '*'
 Plug 'nelstrom/vim-visual-star-search'
+" Distraction free writing
+Plug  'junegunn/goyo.vim'
+" Floating windows
+Plug  'voldikss/vim-floaterm'
+" Undo Tree
+Plug 'mbbill/undotree'
 call plug#end()
+
 
