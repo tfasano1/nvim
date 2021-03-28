@@ -31,19 +31,18 @@ nnoremap <silent> <leader>k <C-w>k <CR>
 nnoremap <silent> <leader>l <C-w>l <CR>
 
 " Open a terminal
-nnoremap <silent> <leader>tt :FloatermNew --position=right<CR>
+nnoremap <silent> <leader>tt :FloatermNew --height=0.2 --width=0.9 --position=bottom<CR>
 
-"File mapnagers
+"File managers
 nnoremap <silent> <leader>r :FloatermNew --height=0.6 --width=0.8 ranger<CR>
-nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 
 " Fuzzy Find
 nnoremap <silent> <leader>f :FloatermNew --height=0.75 --width=0.5 --position=right fzf <CR>
 
 "Saving and Sourcing
 nnoremap <silent> <leader>w :w<CR>
-nnoremap <silent> <leader><CR> :so $MYVIMRC<CR>
-nnoremap <silent> <leader><leader><CR> :e $MYVIMRC <CR>
+nnoremap <silent> <leader>so :so $MYVIMRC<CR>
+nnoremap <silent> <leader><CR> :e $MYVIMRC <CR>
 
 " Toggle Undo Tree
 nnoremap <silent> <leader>u :UndotreeToggle<CR>
@@ -60,7 +59,11 @@ nnoremap <silent><silent>  <esc> :noh<cr><esc>
 nnoremap ; :
 nnoremap : ;
 nnoremap K <nop>
-nnoremap <leader><leader> V
 nnoremap j jzz
 nnoremap k kzz
 nnoremap y$ Y
+
+" Delete without storing in a register
+nnoremap <leader>d "_d
+xnoremap <leader>d "_d
+xnoremap <leader>p "_dP

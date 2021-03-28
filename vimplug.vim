@@ -8,12 +8,8 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 "LaTeX
 Plug 'lervag/vimtex'
-" Close buffer with leader + bd
-Plug 'rbgrouleff/bclose.vim'
-" File Manager
-Plug 'francoiscabrol/ranger.vim'
-" Language server protocol and autocomplete
-   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Coc
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Fuzzy Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -34,8 +30,6 @@ Plug 'justinmk/vim-sneak'
 Plug 'unblevable/quick-scope'
 " Snippets
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-" NerdTree
-Plug 'preservim/nerdtree'
 " CSS color
 Plug 'ap/vim-css-color'
 " Bracket coloring
@@ -52,6 +46,12 @@ Plug  'junegunn/goyo.vim'
 Plug  'voldikss/vim-floaterm'
 " Undo Tree
 Plug 'mbbill/undotree'
+" Dependency for vimfiler
+Plug 'Shougo/unite.vim'
+" File Opener
+Plug 'Shougo/vimfiler.vim'
+" Adds filetype icons
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 

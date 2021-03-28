@@ -5,12 +5,16 @@
 :let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 " Theme for airline
-:let g:airline_theme='base16_gruvbox_dark_hard'
+:let g:airline_theme='jellybeans'
+
+" Open files in a tab from ranger wrapper
+:let g:floaterm_opener='tabe'
 
 " Color Coordinated Paren and Brackets
 :let g:rainbow_active = 1
 
-" autocmd FileType tex,latex,markdown.html setlocal spell spelllang=en_us
+:let g:vimfiler_as_default_explorer = 1
+
 set mouse=a
 set nospell
 set noswapfile
@@ -26,18 +30,22 @@ set nowrap
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set cursorline
 set smartindent
 set splitright
 set splitbelow
-set cursorline
 set background=dark
 set fdm=manual
 " Set window split symbol
 set fillchars+=vert: 
 set nrformats+=alpha
 
-" colorscheme codedark
-colorscheme gruvbox
+
+colorscheme codedark
+" colorscheme gruvbox
+
+ " hi Normal guibg=NONE ctermbg=NONE
+ " highlight SignColumn guibg=NONE ctermbg=NONE
 
 " --- VimTex ---
 :let g:tex_flavor = 'latex'
