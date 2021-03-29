@@ -42,6 +42,8 @@ Plug  'dhruvasagar/vim-table-mode'
 Plug 'nelstrom/vim-visual-star-search'
 " Distraction free writing
 Plug  'junegunn/goyo.vim'
+" Adds digraphs
+" Plug 'atweiden/vim-betterdigraphs'
 " Floating windows
 Plug  'voldikss/vim-floaterm'
 " Undo Tree

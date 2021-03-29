@@ -37,7 +37,7 @@ nnoremap <silent> <leader>tt :FloatermNew --height=0.2 --width=0.9 --position=bo
 nnoremap <silent> <leader>r :FloatermNew --height=0.6 --width=0.8 ranger<CR>
 
 " Fuzzy Find
-nnoremap <silent> <leader>f :FloatermNew --height=0.75 --width=0.5 --position=right fzf <CR>
+nnoremap <silent> <leader>f :FloatermNew --height=0.75 --width=0.5 --position=center fzf <CR>
 
 "Saving and Sourcing
 nnoremap <silent> <leader>w :w<CR>
@@ -67,3 +67,6 @@ nnoremap y$ Y
 nnoremap <leader>d "_d
 xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
+
+" Press leader a to insert accent marks
+nnoremap <leader>a :call ToggleDeadKeys()<CR>

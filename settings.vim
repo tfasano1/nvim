@@ -36,16 +36,16 @@ set splitright
 set splitbelow
 set background=dark
 set fdm=manual
-" Set window split symbol
 set fillchars+=vert: 
 set nrformats+=alpha
-
 
 colorscheme codedark
 " colorscheme gruvbox
 
  " hi Normal guibg=NONE ctermbg=NONE
  " highlight SignColumn guibg=NONE ctermbg=NONE
+ " hi ColorColumn ctermbg=magenta
+ call matchadd('ColorColumn', '\%81v', 100)
 
 " --- VimTex ---
 :let g:tex_flavor = 'latex'
